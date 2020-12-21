@@ -1,6 +1,6 @@
 {
   "name": "@zedvision/emotion-eslint-plugin",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "ESLint rules for emotion",
   "scripts": {
     "test:typescript": "exit 0"
