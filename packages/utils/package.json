@@ -14,7 +14,7 @@
     "test:typescript": "dtslint types",
  "build": "microbundle build"
   },
-  "repository": "https://github.com/emotion-js/emotion/tree/master/packages/utils",
+  "repository": "https://github.com/@zedvision/emotion-js/emotion/tree/master/packages/utils",
   "publishConfig": {
     "access": "public"
   },

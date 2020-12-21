@@ -120,8 +120,8 @@ export default class DocRoute extends React.Component<Props, DocRouteState> {
                 css={{ fontSize: 12, marginLeft: 'auto' }}
                 href={
                   doc.frontmatter.title
-                    ? `https://github.com/emotion-js/emotion/edit/master/docs/${this.props.pageContext.slug}.mdx`
-                    : `https://github.com/emotion-js/emotion/edit/master/packages/${this.props.pageContext.slug}/README.md`
+                    ? `https://github.com/@zedvision/emotion-js/emotion/edit/master/docs/${this.props.pageContext.slug}.mdx`
+                    : `https://github.com/@zedvision/emotion-js/emotion/edit/master/packages/${this.props.pageContext.slug}/README.md`
                 }
               >
                 ✏️ <span css={{ marginLeft: 2 }}>Edit this page</span>

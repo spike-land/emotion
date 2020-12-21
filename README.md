@@ -46,11 +46,11 @@ npm install --save @emotion/react
 /** @jsx jsx */
 import { jsx } from '@emotion/react'
 
-let SomeComponent = props => {
+let SomeComponent = (props) => {
   return (
     <div
       css={{
-        color: 'hotpink'
+        color: 'hotpink',
       }}
       {...props}
     />
@@ -62,7 +62,7 @@ let SomeComponent = props => {
 
 The babel plugin is not required, but enables some optimizations and customizations that could be beneficial for your project.
 
-Look here 👉 _[emotion babel plugin feature table and documentation](https://github.com/emotion-js/emotion/tree/master/packages/babel-plugin)_
+Look here 👉 _[emotion babel plugin feature table and documentation](https://github.com/@zedvision/emotion-js/emotion/tree/master/packages/babel-plugin)_
 
 ### Demo Sandbox
 
@@ -79,7 +79,7 @@ Look here 👉 _[emotion babel plugin feature table and documentation](https://g
 ### Ecosystem
 
 - [stylelint](https://github.com/stylelint/stylelint) - A mighty, modern linter that helps you avoid errors and enforce conventions in your styles.
-- [facepaint](https://github.com/emotion-js/facepaint)
+- [facepaint](https://github.com/@zedvision/emotion-js/facepaint)
 - [emotion-vue](https://github.com/egoist/emotion-vue)
 - [nuxt-community/emotion-module](https://github.com/nuxt-community/emotion-module) - Emotion module for Nuxt.js
 - [ember-emotion](https://github.com/alexlafroscia/ember-emotion)
@@ -112,7 +112,7 @@ Look here 👉 _[emotion babel plugin feature table and documentation](https://g
 ## Contributors
 
 This project exists thanks to all the people who contribute. [[Contribute](CONTRIBUTING.md)].
-<a href="https://github.com/emotion-js/emotion/graphs/contributors"><img src="https://opencollective.com/emotion/contributors.svg?width=890&button=false" /></a>
+<a href="https://github.com/@zedvision/emotion-js/emotion/graphs/contributors"><img src="https://opencollective.com/emotion/contributors.svg?width=890&button=false" /></a>
 
 ## Backers
 

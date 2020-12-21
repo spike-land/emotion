@@ -65,7 +65,7 @@
     "react": "17.0.1",
     "svg-tag-names": "^2.0.1"
   },
-  "repository": "https://github.com/emotion-js/emotion/tree/master/packages/react",
+  "repository": "https://github.com/@zedvision/emotion-js/emotion/tree/master/packages/react",
   "publishConfig": {
     "access": "public"
   },

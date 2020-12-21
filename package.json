@@ -30,7 +30,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/emotion-js/emotion.git"
+    "url": "git+https://github.com/@zedvision/emotion-js/emotion.git"
   },
   "directories": {
     "test": "tests"
@@ -123,7 +123,7 @@
     ]
   },
   "bugs": {
-    "url": "https://github.com/emotion-js/emotion/issues"
+    "url": "https://github.com/@zedvision/emotion-js/emotion/issues"
   },
   "bundlesize": [
     {

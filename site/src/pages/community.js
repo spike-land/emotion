@@ -27,7 +27,7 @@ const Community = (props: *) => {
           <markdownComponents.h2>{'Contributing'}</markdownComponents.h2>
           <markdownComponents.p>
             This list comes from{' '}
-            <a href="https://github.com/emotion-js/awesome-emotion">
+            <a href="https://github.com/@zedvision/emotion-js/awesome-emotion">
               awesome-emotion
             </a>
             . Anything added to that that list will appear here automatically.

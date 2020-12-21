@@ -4,15 +4,15 @@
 
 ### Patch Changes
 
-- [`704b0092`](https://github.com/emotion-js/emotion/commit/704b0092ebba648c3937cc281e4d549565968201) [#2180](https://github.com/emotion-js/emotion/pull/2180) Thanks [@Andarist](https://github.com/Andarist)! - Fixed an issue with global styles containing pseudo selectors in at-rules not being able to be inserted.
+- [`704b0092`](https://github.com/@zedvision/emotion-js/emotion/commit/704b0092ebba648c3937cc281e4d549565968201) [#2180](https://github.com/@zedvision/emotion-js/emotion/pull/2180) Thanks [@Andarist](https://github.com/Andarist)! - Fixed an issue with global styles containing pseudo selectors in at-rules not being able to be inserted.
 
 ## 11.0.0
 
 ### Major Changes
 
-- [`105de5c8`](https://github.com/emotion-js/emotion/commit/105de5c8752be0983c000e1e26462dc8fcf0708d) [#1572](https://github.com/emotion-js/emotion/pull/1572) Thanks [@Andarist](https://github.com/Andarist)! - From now on `key` option is required. Please make sure it's unique (and not equal to `"css"`) as it's used for linking styles to your cache. If multiple caches share the same key they might "fight" for each other's style elements.
+- [`105de5c8`](https://github.com/@zedvision/emotion-js/emotion/commit/105de5c8752be0983c000e1e26462dc8fcf0708d) [#1572](https://github.com/@zedvision/emotion-js/emotion/pull/1572) Thanks [@Andarist](https://github.com/Andarist)! - From now on `key` option is required. Please make sure it's unique (and not equal to `"css"`) as it's used for linking styles to your cache. If multiple caches share the same key they might "fight" for each other's style elements.
 
-* [`9e998e37`](https://github.com/emotion-js/emotion/commit/9e998e3755c217027ad1be0af4c64644fe14c6bf) [#1817](https://github.com/emotion-js/emotion/pull/1817) Thanks [@Andarist](https://github.com/Andarist)! - The parser we use ([Stylis](https://github.com/thysultan/stylis.js)) got upgraded. It fixes some long-standing parsing edge cases while being smaller and faster 🚀
+* [`9e998e37`](https://github.com/@zedvision/emotion-js/emotion/commit/9e998e3755c217027ad1be0af4c64644fe14c6bf) [#1817](https://github.com/@zedvision/emotion-js/emotion/pull/1817) Thanks [@Andarist](https://github.com/Andarist)! - The parser we use ([Stylis](https://github.com/thysultan/stylis.js)) got upgraded. It fixes some long-standing parsing edge cases while being smaller and faster 🚀
 
   It has been completely rewritten and comes with some breaking changes. The most notable ones that might affect Emotion users are:
 
@@ -23,15 +23,15 @@
 
 ### Minor Changes
 
-- [`4a891bf6`](https://github.com/emotion-js/emotion/commit/4a891bf6a30e3bb37f8f32031fa75a571c637d9c) [#1473](https://github.com/emotion-js/emotion/pull/1473) Thanks [@jcharry](https://github.com/jcharry)! - The new `prepend` option can make Emotion add style tags at the beginning of the specified DOM container instead of the end.
+- [`4a891bf6`](https://github.com/@zedvision/emotion-js/emotion/commit/4a891bf6a30e3bb37f8f32031fa75a571c637d9c) [#1473](https://github.com/@zedvision/emotion-js/emotion/pull/1473) Thanks [@jcharry](https://github.com/jcharry)! - The new `prepend` option can make Emotion add style tags at the beginning of the specified DOM container instead of the end.
 
 ### Patch Changes
 
-- [`a8eb4e75`](https://github.com/emotion-js/emotion/commit/a8eb4e75eed26763dc4f82ddd9bb49af4552768b) [#1998](https://github.com/emotion-js/emotion/pull/1998) Thanks [@Andarist](https://github.com/Andarist)! - Styles are now correctly extracted from the correct cache (`key`-sensitive) on the server.
+- [`a8eb4e75`](https://github.com/@zedvision/emotion-js/emotion/commit/a8eb4e75eed26763dc4f82ddd9bb49af4552768b) [#1998](https://github.com/@zedvision/emotion-js/emotion/pull/1998) Thanks [@Andarist](https://github.com/Andarist)! - Styles are now correctly extracted from the correct cache (`key`-sensitive) on the server.
 
-* [`105de5c8`](https://github.com/emotion-js/emotion/commit/105de5c8752be0983c000e1e26462dc8fcf0708d) [#1572](https://github.com/emotion-js/emotion/pull/1572) Thanks [@Andarist](https://github.com/Andarist)! - Fixed issue with SSRed styles causing a React rehydration mismatch between server & client when cache was created in render.
+* [`105de5c8`](https://github.com/@zedvision/emotion-js/emotion/commit/105de5c8752be0983c000e1e26462dc8fcf0708d) [#1572](https://github.com/@zedvision/emotion-js/emotion/pull/1572) Thanks [@Andarist](https://github.com/Andarist)! - Fixed issue with SSRed styles causing a React rehydration mismatch between server & client when cache was created in render.
 
-- [`39be057b`](https://github.com/emotion-js/emotion/commit/39be057b1a0c6b76f2cb7a455cb8bc35fe875ba0) [#1997](https://github.com/emotion-js/emotion/pull/1997) Thanks [@Andarist](https://github.com/Andarist)! - From now on an empty rule will get inserted into the DOM in non-production environments if it gets created by the user. This helps to grab used `key`s from the (JS)DOM even for caches that have not inserted any actual rules to the document yet. It allows `@emotion/jest` to find those and serialize Emotion classes properly in situations like this:
+- [`39be057b`](https://github.com/@zedvision/emotion-js/emotion/commit/39be057b1a0c6b76f2cb7a455cb8bc35fe875ba0) [#1997](https://github.com/@zedvision/emotion-js/emotion/pull/1997) Thanks [@Andarist](https://github.com/Andarist)! - From now on an empty rule will get inserted into the DOM in non-production environments if it gets created by the user. This helps to grab used `key`s from the (JS)DOM even for caches that have not inserted any actual rules to the document yet. It allows `@emotion/jest` to find those and serialize Emotion classes properly in situations like this:
 
   ```js
   import styled from '@emotion/styled/macro'
@@ -43,7 +43,7 @@
   })
   ```
 
-- Updated dependencies [[`42df3f3b`](https://github.com/emotion-js/emotion/commit/42df3f3bc01526eed61cedba106d86b9e3807f9d), [`4a891bf6`](https://github.com/emotion-js/emotion/commit/4a891bf6a30e3bb37f8f32031fa75a571c637d9c), [`1e4a741d`](https://github.com/emotion-js/emotion/commit/1e4a741de6424d3d9c1f3ca9695e1953bed3a194), [`debaad9a`](https://github.com/emotion-js/emotion/commit/debaad9ab4bd6c80312092826d9146f3d29c0899), [`dfe79aca`](https://github.com/emotion-js/emotion/commit/dfe79aca696fc688f960218b16afee197926fe71), [`9e998e37`](https://github.com/emotion-js/emotion/commit/9e998e3755c217027ad1be0af4c64644fe14c6bf), [`9e998e37`](https://github.com/emotion-js/emotion/commit/9e998e3755c217027ad1be0af4c64644fe14c6bf)]:
+- Updated dependencies [[`42df3f3b`](https://github.com/@zedvision/emotion-js/emotion/commit/42df3f3bc01526eed61cedba106d86b9e3807f9d), [`4a891bf6`](https://github.com/@zedvision/emotion-js/emotion/commit/4a891bf6a30e3bb37f8f32031fa75a571c637d9c), [`1e4a741d`](https://github.com/@zedvision/emotion-js/emotion/commit/1e4a741de6424d3d9c1f3ca9695e1953bed3a194), [`debaad9a`](https://github.com/@zedvision/emotion-js/emotion/commit/debaad9ab4bd6c80312092826d9146f3d29c0899), [`dfe79aca`](https://github.com/@zedvision/emotion-js/emotion/commit/dfe79aca696fc688f960218b16afee197926fe71), [`9e998e37`](https://github.com/@zedvision/emotion-js/emotion/commit/9e998e3755c217027ad1be0af4c64644fe14c6bf), [`9e998e37`](https://github.com/@zedvision/emotion-js/emotion/commit/9e998e3755c217027ad1be0af4c64644fe14c6bf)]:
   - @emotion/sheet@1.0.0
   - @emotion/utils@1.0.0
 
@@ -51,11 +51,11 @@
 
 ### Major Changes
 
-- [`9c4ebc16`](https://github.com/emotion-js/emotion/commit/9c4ebc160471097c5d04fb92dba3ed0df870bb63) [#2030](https://github.com/emotion-js/emotion/pull/2030) Thanks [@Andarist](https://github.com/Andarist)! - Release candidate version.
+- [`9c4ebc16`](https://github.com/@zedvision/emotion-js/emotion/commit/9c4ebc160471097c5d04fb92dba3ed0df870bb63) [#2030](https://github.com/@zedvision/emotion-js/emotion/pull/2030) Thanks [@Andarist](https://github.com/Andarist)! - Release candidate version.
 
 ### Patch Changes
 
-- Updated dependencies [[`9c4ebc16`](https://github.com/emotion-js/emotion/commit/9c4ebc160471097c5d04fb92dba3ed0df870bb63)]:
+- Updated dependencies [[`9c4ebc16`](https://github.com/@zedvision/emotion-js/emotion/commit/9c4ebc160471097c5d04fb92dba3ed0df870bb63)]:
   - @emotion/sheet@1.0.0-rc.0
   - @emotion/utils@1.0.0-rc.0
 
@@ -63,26 +63,26 @@
 
 ### Patch Changes
 
-- [`42df3f3b`](https://github.com/emotion-js/emotion/commit/42df3f3bc01526eed61cedba106d86b9e3807f9d) [#2028](https://github.com/emotion-js/emotion/pull/2028) Thanks [@Andarist](https://github.com/Andarist)! - Fixed an issue with Emotion messing up style elements already processed by previously initialized Emotion copy.
+- [`42df3f3b`](https://github.com/@zedvision/emotion-js/emotion/commit/42df3f3bc01526eed61cedba106d86b9e3807f9d) [#2028](https://github.com/@zedvision/emotion-js/emotion/pull/2028) Thanks [@Andarist](https://github.com/Andarist)! - Fixed an issue with Emotion messing up style elements already processed by previously initialized Emotion copy.
 
-- Updated dependencies [[`42df3f3b`](https://github.com/emotion-js/emotion/commit/42df3f3bc01526eed61cedba106d86b9e3807f9d)]:
+- Updated dependencies [[`42df3f3b`](https://github.com/@zedvision/emotion-js/emotion/commit/42df3f3bc01526eed61cedba106d86b9e3807f9d)]:
   - @emotion/sheet@1.0.0-next.5
 
 ## 11.0.0-next.18
 
 ### Patch Changes
 
-- [`19df60b8`](https://github.com/emotion-js/emotion/commit/19df60b8382814f241f909e1f4cb98fe19e72a4a) [#2015](https://github.com/emotion-js/emotion/pull/2015) Thanks [@Andarist](https://github.com/Andarist)! - Fixed an issue with rules nested in orphaned pseudo selectors not being adjusted correctly.
+- [`19df60b8`](https://github.com/@zedvision/emotion-js/emotion/commit/19df60b8382814f241f909e1f4cb98fe19e72a4a) [#2015](https://github.com/@zedvision/emotion-js/emotion/pull/2015) Thanks [@Andarist](https://github.com/Andarist)! - Fixed an issue with rules nested in orphaned pseudo selectors not being adjusted correctly.
 
 ## 11.0.0-next.16
 
 ### Patch Changes
 
-- [`a8eb4e75`](https://github.com/emotion-js/emotion/commit/a8eb4e75eed26763dc4f82ddd9bb49af4552768b) [#1998](https://github.com/emotion-js/emotion/pull/1998) Thanks [@Andarist](https://github.com/Andarist)! - Styles are now correctly extracted from the correct cache (`key`-sensitive) on the server.
+- [`a8eb4e75`](https://github.com/@zedvision/emotion-js/emotion/commit/a8eb4e75eed26763dc4f82ddd9bb49af4552768b) [#1998](https://github.com/@zedvision/emotion-js/emotion/pull/1998) Thanks [@Andarist](https://github.com/Andarist)! - Styles are now correctly extracted from the correct cache (`key`-sensitive) on the server.
 
-* [`dfe98028`](https://github.com/emotion-js/emotion/commit/dfe98028451a27c5190fa1ba138e51ef3d6d9be1) [#2003](https://github.com/emotion-js/emotion/pull/2003) Thanks [@Andarist](https://github.com/Andarist)! - Fixed an issue with orphaned pseudo selectors (e.g. `:hover` - where `&:hover`, `div:hover`, etc are not considered orphaned) having the context selector (the one computed based on all ancestor levels selectors) doubled in a descendant at-rule.
+* [`dfe98028`](https://github.com/@zedvision/emotion-js/emotion/commit/dfe98028451a27c5190fa1ba138e51ef3d6d9be1) [#2003](https://github.com/@zedvision/emotion-js/emotion/pull/2003) Thanks [@Andarist](https://github.com/Andarist)! - Fixed an issue with orphaned pseudo selectors (e.g. `:hover` - where `&:hover`, `div:hover`, etc are not considered orphaned) having the context selector (the one computed based on all ancestor levels selectors) doubled in a descendant at-rule.
 
-- [`39be057b`](https://github.com/emotion-js/emotion/commit/39be057b1a0c6b76f2cb7a455cb8bc35fe875ba0) [#1997](https://github.com/emotion-js/emotion/pull/1997) Thanks [@Andarist](https://github.com/Andarist)! - From now on an empty rule will get inserted into the DOM in non-production environments if it gets created by the user. This helps to grab used `key`s from the (JS)DOM even for caches that have not inserted any actual rules to the document yet. It allows `@emotion/jest` to find those and serialize Emotion classes properly in situations like this:
+- [`39be057b`](https://github.com/@zedvision/emotion-js/emotion/commit/39be057b1a0c6b76f2cb7a455cb8bc35fe875ba0) [#1997](https://github.com/@zedvision/emotion-js/emotion/pull/1997) Thanks [@Andarist](https://github.com/Andarist)! - From now on an empty rule will get inserted into the DOM in non-production environments if it gets created by the user. This helps to grab used `key`s from the (JS)DOM even for caches that have not inserted any actual rules to the document yet. It allows `@emotion/jest` to find those and serialize Emotion classes properly in situations like this:
 
   ```js
   import styled from '@emotion/styled/macro'
@@ -94,7 +94,7 @@
   })
   ```
 
-- Updated dependencies [[`debaad9a`](https://github.com/emotion-js/emotion/commit/debaad9ab4bd6c80312092826d9146f3d29c0899), [`39be057b`](https://github.com/emotion-js/emotion/commit/39be057b1a0c6b76f2cb7a455cb8bc35fe875ba0)]:
+- Updated dependencies [[`debaad9a`](https://github.com/@zedvision/emotion-js/emotion/commit/debaad9ab4bd6c80312092826d9146f3d29c0899), [`39be057b`](https://github.com/@zedvision/emotion-js/emotion/commit/39be057b1a0c6b76f2cb7a455cb8bc35fe875ba0)]:
   - @emotion/utils@1.0.0-next.1
   - @emotion/sheet@1.0.0-next.4
 
@@ -102,14 +102,14 @@
 
 ### Patch Changes
 
-- Updated dependencies [[`dc1a0c5e`](https://github.com/emotion-js/emotion/commit/dc1a0c5ed78b27fb7ce49b6296f2ca8631654cd1)]:
+- Updated dependencies [[`dc1a0c5e`](https://github.com/@zedvision/emotion-js/emotion/commit/dc1a0c5ed78b27fb7ce49b6296f2ca8631654cd1)]:
   - @emotion/sheet@1.0.0-next.3
 
 ## 11.0.0-next.13
 
 ### Major Changes
 
-- [`9e998e37`](https://github.com/emotion-js/emotion/commit/9e998e3755c217027ad1be0af4c64644fe14c6bf) [#1817](https://github.com/emotion-js/emotion/pull/1817) Thanks [@Andarist](https://github.com/Andarist)! - The parser we use ([Stylis](https://github.com/thysultan/stylis.js)) got upgraded. It fixes some long-standing parsing edge cases while being smaller and faster 🚀
+- [`9e998e37`](https://github.com/@zedvision/emotion-js/emotion/commit/9e998e3755c217027ad1be0af4c64644fe14c6bf) [#1817](https://github.com/@zedvision/emotion-js/emotion/pull/1817) Thanks [@Andarist](https://github.com/Andarist)! - The parser we use ([Stylis](https://github.com/thysultan/stylis.js)) got upgraded. It fixes some long-standing parsing edge cases while being smaller and faster 🚀
 
   It has been completely rewritten and comes with some breaking changes. Most notable ones that might affect Emotion users are:
 
@@ -120,7 +120,7 @@
 
 ### Patch Changes
 
-- Updated dependencies [[`91046a8c`](https://github.com/emotion-js/emotion/commit/91046a8c188327a65daac61583ef3c4458f30afb), [`9e998e37`](https://github.com/emotion-js/emotion/commit/9e998e3755c217027ad1be0af4c64644fe14c6bf), [`9e998e37`](https://github.com/emotion-js/emotion/commit/9e998e3755c217027ad1be0af4c64644fe14c6bf)]:
+- Updated dependencies [[`91046a8c`](https://github.com/@zedvision/emotion-js/emotion/commit/91046a8c188327a65daac61583ef3c4458f30afb), [`9e998e37`](https://github.com/@zedvision/emotion-js/emotion/commit/9e998e3755c217027ad1be0af4c64644fe14c6bf), [`9e998e37`](https://github.com/@zedvision/emotion-js/emotion/commit/9e998e3755c217027ad1be0af4c64644fe14c6bf)]:
   - @emotion/sheet@1.0.0-next.2
   - @emotion/utils@1.0.0-next.0
 
@@ -128,50 +128,50 @@
 
 ### Major Changes
 
-- [`105de5c8`](https://github.com/emotion-js/emotion/commit/105de5c8752be0983c000e1e26462dc8fcf0708d) [#1572](https://github.com/emotion-js/emotion/pull/1572) Thanks [@Andarist](https://github.com/Andarist)! - From now on `key` option is required. Please make sure it's unique (and not equal to 'css') as it's used for linking styles to your cache. If multiple caches share the same key they might "fight" for each other's style elements.
+- [`105de5c8`](https://github.com/@zedvision/emotion-js/emotion/commit/105de5c8752be0983c000e1e26462dc8fcf0708d) [#1572](https://github.com/@zedvision/emotion-js/emotion/pull/1572) Thanks [@Andarist](https://github.com/Andarist)! - From now on `key` option is required. Please make sure it's unique (and not equal to 'css') as it's used for linking styles to your cache. If multiple caches share the same key they might "fight" for each other's style elements.
 
 ### Patch Changes
 
-- [`105de5c8`](https://github.com/emotion-js/emotion/commit/105de5c8752be0983c000e1e26462dc8fcf0708d) [#1572](https://github.com/emotion-js/emotion/pull/1572) Thanks [@Andarist](https://github.com/Andarist)! - Fixed issue with SSRed styles causing a React rehydration mismatch between server & client when cache was created in render.
+- [`105de5c8`](https://github.com/@zedvision/emotion-js/emotion/commit/105de5c8752be0983c000e1e26462dc8fcf0708d) [#1572](https://github.com/@zedvision/emotion-js/emotion/pull/1572) Thanks [@Andarist](https://github.com/Andarist)! - Fixed issue with SSRed styles causing a React rehydration mismatch between server & client when cache was created in render.
 
 ## 11.0.0-next.10
 
 ### Patch Changes
 
-- [`dfe79aca`](https://github.com/emotion-js/emotion/commit/dfe79aca696fc688f960218b16afee197926fe71) [#1572](https://github.com/emotion-js/emotion/pull/1572) Thanks [@Andarist](https://github.com/Andarist)! - Use sheet's `rehydrate` method for SSRed styles which inserts rehydrated styles at correct position when used in combination with `prepend` option.
-- Updated dependencies [[`1e4a741d`](https://github.com/emotion-js/emotion/commit/1e4a741de6424d3d9c1f3ca9695e1953bed3a194), [`dfe79aca`](https://github.com/emotion-js/emotion/commit/dfe79aca696fc688f960218b16afee197926fe71)]:
+- [`dfe79aca`](https://github.com/@zedvision/emotion-js/emotion/commit/dfe79aca696fc688f960218b16afee197926fe71) [#1572](https://github.com/@zedvision/emotion-js/emotion/pull/1572) Thanks [@Andarist](https://github.com/Andarist)! - Use sheet's `rehydrate` method for SSRed styles which inserts rehydrated styles at correct position when used in combination with `prepend` option.
+- Updated dependencies [[`1e4a741d`](https://github.com/@zedvision/emotion-js/emotion/commit/1e4a741de6424d3d9c1f3ca9695e1953bed3a194), [`dfe79aca`](https://github.com/@zedvision/emotion-js/emotion/commit/dfe79aca696fc688f960218b16afee197926fe71)]:
   - @emotion/sheet@0.10.0-next.1
 
 ## 11.0.0-next.6
 
 ### Minor Changes
 
-- [`4a891bf6`](https://github.com/emotion-js/emotion/commit/4a891bf6a30e3bb37f8f32031fa75a571c637d9c) [#1473](https://github.com/emotion-js/emotion/pull/1473) Thanks [@jcharry](https://github.com/jcharry)! - Accept new `prepend` option to allow for adding style tags at the beginning of the specified DOM container.
+- [`4a891bf6`](https://github.com/@zedvision/emotion-js/emotion/commit/4a891bf6a30e3bb37f8f32031fa75a571c637d9c) [#1473](https://github.com/@zedvision/emotion-js/emotion/pull/1473) Thanks [@jcharry](https://github.com/jcharry)! - Accept new `prepend` option to allow for adding style tags at the beginning of the specified DOM container.
 
 ### Patch Changes
 
-- Updated dependencies [[`4a891bf6`](https://github.com/emotion-js/emotion/commit/4a891bf6a30e3bb37f8f32031fa75a571c637d9c)]:
+- Updated dependencies [[`4a891bf6`](https://github.com/@zedvision/emotion-js/emotion/commit/4a891bf6a30e3bb37f8f32031fa75a571c637d9c)]:
   - @emotion/sheet@0.10.0-next.0
 
 ## 11.0.0-next.0
 
 ### Major Changes
 
-- [`302bdba1`](https://github.com/emotion-js/emotion/commit/302bdba1a6b793484c09edeb668815c5e31ea555) [#1600](https://github.com/emotion-js/emotion/pull/1600) Thanks [@mitchellhamilton](https://github.com/mitchellhamilton)! - Ensure packages are major bumped so that pre-release versions of the linked packages are consistent in the major number
+- [`302bdba1`](https://github.com/@zedvision/emotion-js/emotion/commit/302bdba1a6b793484c09edeb668815c5e31ea555) [#1600](https://github.com/@zedvision/emotion-js/emotion/pull/1600) Thanks [@mitchellhamilton](https://github.com/mitchellhamilton)! - Ensure packages are major bumped so that pre-release versions of the linked packages are consistent in the major number
 
 ## 10.0.29
 
 ### Patch Changes
 
-- Updated dependencies [[`446e756`](https://github.com/emotion-js/emotion/commit/446e75661c4aa01e51d1466472a212940c19cd82)]:
+- Updated dependencies [[`446e756`](https://github.com/@zedvision/emotion-js/emotion/commit/446e75661c4aa01e51d1466472a212940c19cd82)]:
   - @emotion/hash@0.8.0
 
 ## 10.0.27
 
 ### Patch Changes
 
-- [`4c62ae9`](https://github.com/emotion-js/emotion/commit/4c62ae9447959d438928e1a26f76f1487983c968) [#1698](https://github.com/emotion-js/emotion/pull/1698) Thanks [@Andarist](https://github.com/Andarist)! - Add LICENSE file
-- Updated dependencies [[`4c62ae9`](https://github.com/emotion-js/emotion/commit/4c62ae9447959d438928e1a26f76f1487983c968)]:
+- [`4c62ae9`](https://github.com/@zedvision/emotion-js/emotion/commit/4c62ae9447959d438928e1a26f76f1487983c968) [#1698](https://github.com/@zedvision/emotion-js/emotion/pull/1698) Thanks [@Andarist](https://github.com/Andarist)! - Add LICENSE file
+- Updated dependencies [[`4c62ae9`](https://github.com/@zedvision/emotion-js/emotion/commit/4c62ae9447959d438928e1a26f76f1487983c968)]:
   - @emotion/hash@0.7.4
   - @emotion/sheet@0.9.4
   - @emotion/stylis@0.8.5
@@ -188,17 +188,17 @@
 
 ### Patch Changes
 
-- [10514a86](https://github.com/emotion-js/emotion/commit/10514a8635dcaa55b85c7bff90e2a9e14d1ba61f) [#1482](https://github.com/emotion-js/emotion/pull/1482) Thanks [@mitchellhamilton](https://github.com/mitchellhamilton)! - Remove react native bundles in favour of different isBrowser detection
-  - [16ff2330](https://github.com/emotion-js/emotion/commit/16ff233061e35fe71bfb1671da54ac12d6fc9eeb) [#1483](https://github.com/emotion-js/emotion/pull/1483) Thanks [@JakeGinnivan](https://github.com/JakeGinnivan)! - nth selector will no longer warn when using extract critical
+- [10514a86](https://github.com/@zedvision/emotion-js/emotion/commit/10514a8635dcaa55b85c7bff90e2a9e14d1ba61f) [#1482](https://github.com/@zedvision/emotion-js/emotion/pull/1482) Thanks [@mitchellhamilton](https://github.com/mitchellhamilton)! - Remove react native bundles in favour of different isBrowser detection
+  - [16ff2330](https://github.com/@zedvision/emotion-js/emotion/commit/16ff233061e35fe71bfb1671da54ac12d6fc9eeb) [#1483](https://github.com/@zedvision/emotion-js/emotion/pull/1483) Thanks [@JakeGinnivan](https://github.com/JakeGinnivan)! - nth selector will no longer warn when using extract critical
 
 ## 10.0.15
 
 ### Patch Changes
 
-- [61e61edc](https://github.com/emotion-js/emotion/commit/61e61edc) [#1412](https://github.com/emotion-js/emotion/pull/1412) Thanks [@donysukardi](https://github.com/donysukardi)! - Add explicit entries for react-native and sketch environments
+- [61e61edc](https://github.com/@zedvision/emotion-js/emotion/commit/61e61edc) [#1412](https://github.com/@zedvision/emotion-js/emotion/pull/1412) Thanks [@donysukardi](https://github.com/donysukardi)! - Add explicit entries for react-native and sketch environments
 
 ## 10.0.14
 
 ### Patch Changes
 
-- [c0eb604d](https://github.com/emotion-js/emotion/commit/c0eb604d) [#1419](https://github.com/emotion-js/emotion/pull/1419) Thanks [@mitchellhamilton](https://github.com/mitchellhamilton)! - Update build tool
+- [c0eb604d](https://github.com/@zedvision/emotion-js/emotion/commit/c0eb604d) [#1419](https://github.com/@zedvision/emotion-js/emotion/pull/1419) Thanks [@mitchellhamilton](https://github.com/mitchellhamilton)! - Update build tool

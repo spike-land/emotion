@@ -35,7 +35,7 @@
   },
   "homepage": "https://emotion.sh",
   "license": "MIT",
-  "repository": "https://github.com/emotion-js/emotion/tree/master/packages/primitives",
+  "repository": "https://github.com/@zedvision/emotion-js/emotion/tree/master/packages/primitives",
   "keywords": [
     "styles",
     "emotion",
@@ -45,7 +45,7 @@
     "primitives"
   ],
   "bugs": {
-    "url": "https://github.com/emotion-js/emotion/issues"
+    "url": "https://github.com/@zedvision/emotion-js/emotion/issues"
   },
   "publishConfig": {
     "access": "public"

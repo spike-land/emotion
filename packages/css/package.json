@@ -40,7 +40,7 @@
   "author": "Kye Hohenberger",
   "homepage": "https://emotion.sh",
   "license": "MIT",
-  "repository": "https://github.com/emotion-js/emotion/tree/master/packages/css",
+  "repository": "https://github.com/@zedvision/emotion-js/emotion/tree/master/packages/css",
   "keywords": [
     "styles",
     "emotion",
@@ -49,7 +49,7 @@
     "css-in-js"
   ],
   "bugs": {
-    "url": "https://github.com/emotion-js/emotion/issues"
+    "url": "https://github.com/@zedvision/emotion-js/emotion/issues"
   },
   "umd:main": "dist/emotion-css.umd.min.js",
   "preconstruct": {

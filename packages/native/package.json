@@ -36,7 +36,7 @@
   },
   "homepage": "https://emotion.sh",
   "license": "MIT",
-  "repository": "https://github.com/emotion-js/emotion/tree/master/packages/native",
+  "repository": "https://github.com/@zedvision/emotion-js/emotion/tree/master/packages/native",
   "keywords": [
     "styles",
     "emotion",
@@ -46,7 +46,7 @@
     "native"
   ],
   "bugs": {
-    "url": "https://github.com/emotion-js/emotion/issues"
+    "url": "https://github.com/@zedvision/emotion-js/emotion/issues"
   },
   "publishConfig": {
     "access": "public"

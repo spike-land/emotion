@@ -141,7 +141,7 @@ export default function SiteHeader() {
               </HeaderLink>
             </li>
             <li>
-              <HeaderLink to="https://github.com/emotion-js/emotion">
+              <HeaderLink to="https://github.com/@zedvision/emotion-js/emotion">
                 GitHub
               </HeaderLink>
             </li>
