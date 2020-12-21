@@ -1,6 +1,6 @@
 {
   "name": "@zedvision/emotion-babel-preset-css-prop",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "A babel preset to automatically enable emotion's css prop",
   "main": "dist/emotion-babel-preset-css-prop.cjs.js",
   "module": "dist/emotion-babel-preset-css-prop.esm.js",
@@ -12,8 +12,8 @@
   "dependencies": {
     "@babel/plugin-transform-react-jsx": "^7.12.11",
     "@babel/runtime": "^7.12.5",
-    "@zedvision/emotion-babel-plugin": "^0.0.3",
-    "@zedvision/emotion-babel-plugin-jsx-pragmatic": "^0.0.3"
+    "@zedvision/emotion-babel-plugin": "^0.0.4",
+    "@zedvision/emotion-babel-plugin-jsx-pragmatic": "^0.0.4"
   },
   "peerDependencies": {
     "@babel/core": "^7.12.10"

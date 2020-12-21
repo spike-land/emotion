@@ -1,6 +1,6 @@
 {
   "name": "@zedvision/emotion-primitives",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "main": "dist/emotion-primitives.cjs.js",
   "module": "dist/emotion-primitives.esm.js",
   "scripts": {
@@ -12,9 +12,9 @@
     "macro.js"
   ],
   "dependencies": {
-    "@zedvision/emotion-babel-plugin": "^0.0.3",
-    "@zedvision/emotion-is-prop-valid": "^0.0.3",
-    "@zedvision/emotion-primitives-core": "^0.0.3"
+    "@zedvision/emotion-babel-plugin": "^0.0.4",
+    "@zedvision/emotion-is-prop-valid": "^0.0.4",
+    "@zedvision/emotion-primitives-core": "^0.0.4"
   },
   "peerDependencies": {
     "@babel/core": "^7.12.10",

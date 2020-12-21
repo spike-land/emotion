@@ -1,6 +1,6 @@
 {
   "name": "@zedvision/emotion-css",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "The Next Generation of CSS-in-JS.",
   "main": "dist/emotion-css.cjs.js",
   "module": "dist/emotion-css.esm.js",
@@ -19,11 +19,11 @@
     "build": "microbundle build"
   },
   "dependencies": {
-    "@zedvision/emotion-babel-plugin": "^0.0.3",
-    "@zedvision/emotion-cache": "^0.0.3",
-    "@zedvision/emotion-serialize": "^0.0.3",
-    "@zedvision/emotion-sheet": "^0.0.3",
-    "@zedvision/emotion-utils": "^0.0.3"
+    "@zedvision/emotion-babel-plugin": "^0.0.4",
+    "@zedvision/emotion-cache": "^0.0.4",
+    "@zedvision/emotion-serialize": "^0.0.4",
+    "@zedvision/emotion-sheet": "^0.0.4",
+    "@zedvision/emotion-utils": "^0.0.4"
   },
   "peerDependencies": {
     "@babel/core": "^7.12.10"

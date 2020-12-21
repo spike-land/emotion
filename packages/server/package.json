@@ -1,6 +1,6 @@
 {
   "name": "@zedvision/emotion-server",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Extract and inline critical css with emotion for server side rendering.",
   "main": "dist/emotion-server.cjs.js",
   "types": "types/index.d.ts",
@@ -15,7 +15,7 @@
     "build": "microbundle build"
   },
   "dependencies": {
-    "@zedvision/emotion-utils": "^0.0.3",
+    "@zedvision/emotion-utils": "^0.0.4",
     "html-tokenize": "^2.0.1",
     "multipipe": "^4.0.0",
     "through": "^2.3.8"
@@ -30,9 +30,9 @@
   },
   "devDependencies": {
     "@types/node": "^14.14.14",
-    "@zedvision/emotion-babel-plugin": "^0.0.3",
-    "@zedvision/emotion-css": "^0.0.3",
-    "@zedvision/emotion-css-prettifier": "^0.0.3",
+    "@zedvision/emotion-babel-plugin": "^0.0.4",
+    "@zedvision/emotion-css": "^0.0.4",
+    "@zedvision/emotion-css-prettifier": "^0.0.4",
     "dtslint": "^4.0.6"
   },
   "author": "Kye Hohenberger",
