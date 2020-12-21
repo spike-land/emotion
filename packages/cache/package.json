@@ -1,6 +1,6 @@
 {
   "name": "@zedvision/emotion-cache",
-  "version": "11.1.3",
+  "version": "0.0.1",
   "description": "emotion's cache",
   "main": "dist/emotion-cache.cjs.js",
   "module": "dist/emotion-cache.esm.js",
@@ -13,17 +13,17 @@
   "repository": "https://github.com/@zedvision/emotion-js/emotion/tree/master/packages/cache",
   "scripts": {
     "test:typescript": "dtslint types",
- "build": "microbundle build"
+    "build": "microbundle build"
   },
   "dependencies": {
-    "@zedvision/emotion-memoize": "^0.7.5",
-    "@zedvision/emotion-sheet": "^1.0.1",
-    "@zedvision/emotion-utils": "^1.0.0",
-    "@zedvision/emotion-weak-memoize": "^0.2.5",
+    "@zedvision/emotion-memoize": "^0.0.1",
+    "@zedvision/emotion-sheet": "^0.0.1",
+    "@zedvision/emotion-utils": "^0.0.1",
+    "@zedvision/emotion-weak-memoize": "^0.0.1",
     "stylis": "^4.0.6"
   },
   "devDependencies": {
-    "@zedvision/emotion-hash": "*",
+    "@zedvision/emotion-hash": "^0.0.1",
     "dtslint": "^4.0.6"
   },
   "publishConfig": {

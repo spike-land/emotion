@@ -1,6 +1,6 @@
 {
   "name": "@zedvision/emotion-utils",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "internal utils for emotion",
   "main": "dist/emotion-utils.cjs.js",
   "module": "dist/emotion-utils.esm.js",
@@ -12,7 +12,7 @@
   "license": "MIT",
   "scripts": {
     "test:typescript": "dtslint types",
- "build": "microbundle build"
+    "build": "microbundle build"
   },
   "repository": "https://github.com/@zedvision/emotion-js/emotion/tree/master/packages/utils",
   "publishConfig": {

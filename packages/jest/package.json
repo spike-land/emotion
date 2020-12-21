@@ -1,6 +1,6 @@
 {
   "name": "@zedvision/emotion-jest",
-  "version": "11.1.0",
+  "version": "0.0.1",
   "description": "Jest utilities for emotion",
   "main": "dist/emotion-jest.cjs.js",
   "module": "dist/emotion-jest.esm.js",
@@ -15,11 +15,11 @@
   ],
   "scripts": {
     "test:typescript": "dtslint types",
- "build": "microbundle build"
+    "build": "microbundle build"
   },
   "dependencies": {
     "@babel/runtime": "^7.12.5",
-    "@zedvision/emotion-css-prettifier": "^1.0.0",
+    "@zedvision/emotion-css-prettifier": "^0.0.1",
     "chalk": "^4.1.0",
     "specificity": "^0.4.1",
     "stylis": "^4.0.6"
@@ -37,9 +37,9 @@
     }
   },
   "devDependencies": {
-    "@zedvision/emotion-css": "11.1.3",
-    "@zedvision/emotion-react": "11.1.3",
     "@types/jest": "^26.0.19",
+    "@zedvision/emotion-css": "^0.0.1",
+    "@zedvision/emotion-react": "^0.0.1",
     "dtslint": "^4.0.6",
     "enzyme-to-json": "^3.6.1",
     "preact": "^10.5.7",

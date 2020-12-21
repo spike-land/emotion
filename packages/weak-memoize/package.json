@@ -1,6 +1,6 @@
 {
   "name": "@zedvision/emotion-weak-memoize",
-  "version": "0.2.5",
+  "version": "0.0.1",
   "description": "A memoization function that uses a WeakMap",
   "main": "dist/emotion-weak-memoize.cjs.js",
   "module": "dist/emotion-weak-memoize.esm.js",
@@ -9,7 +9,7 @@
   "repository": "https://github.com/@zedvision/emotion-js/emotion/tree/master/packages/weak-memoize",
   "scripts": {
     "test:typescript": "dtslint types",
- "build": "microbundle build"
+    "build": "microbundle build"
   },
   "publishConfig": {
     "access": "public"
